@@ -1,6 +1,8 @@
 import streamlit as st
 from pathlib import Path
 from PIL import Image
+import os
+
 
 This_DIR = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 ASSETS_DIR =This_DIR / "assets"
@@ -87,8 +89,8 @@ with st.container():
     image_column, text_column = st.columns((1,2))
     with image_column:
         #insert image
-        product_image = Image.open(ASSETS_DIR / "wacp.png")
-        st.image(product_image,width=300)
+        produc_image = Image.open(ASSETS_DIR / "wacp.png")
+        st.image(produc_image,width=300)
     with text_column:
         st.subheader("Development of a Web-based Continuing Medical Education Programmes")
         st.write(
@@ -111,8 +113,8 @@ with st.container():
     image_column, text_column = st.columns((1,2))
     with image_column:
         #insert image
-        product_image = Image.open(ASSETS_DIR / "mansag.png")
-        st.image(product_image,width=300)
+        produ_image = Image.open(ASSETS_DIR / "mansag.png")
+        st.image(produ_image,width=300)
     with text_column:
         st.subheader("Using Python/HTML/CSS to development membership management apps")
         st.write(
